@@ -1,2 +1,1 @@
-Object Object Atualzei pra dar conflito kkkk'
-Atualizei de novo... 
+Object Object Atualzei de novo
