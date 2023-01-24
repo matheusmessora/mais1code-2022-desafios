@@ -1,4 +1,4 @@
-Object Object console.log("AAA") kkkk'
+Object Object 
 
 if (true)
  console.log("AAA")
