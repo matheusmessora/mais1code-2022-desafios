@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula Mais 1 code</title>
+    <link rel="stylesheet" href="aula.css">
+</head>
+<body>
+
+<p id="meuParagrafo">Este é um parágrafo de exemplo.</p>
+
+<input type="text" id="meuCampo" value="Exemplo de valor">
+
+<button id="meuBotao">Clique aqui</button>
+
+<!-- HTML -->
+<div id="meu">
+  <p>Este é um parágrafo de exemplo.</p>
+</div>
+
+<div id="meuDivo"></div>
+
+
+</body>
+
+<script>
+    document.getElementById("meuParagrafo").innerHTML = "Este é um novo parágrafo.";
+    let valorCampo = document.getElementById("meuCampo").value;
+    console.log("O valor do campo é: " + valorCampo);
+
+        // JavaScript
+    document.getElementById("meuBotao").addEventListener("click", function() {
+        alert("Você clicou no botão!");
+    });
+
+
+
+    // JavaScript
+    let novoParagrafo = document.createElement("p");
+    let textoParagrafo = document.createTextNode("Este é um novo parágrafo criado com JavaScript!");
+    novoParagrafo.appendChild(textoParagrafo);
+
+    let meuDiv = document.getElementById("meuDivo");
+    meuDiv.appendChild(novoParagrafo);
+</script>
+
+</html>

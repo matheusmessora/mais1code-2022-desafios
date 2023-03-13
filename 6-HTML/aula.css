@@ -1,0 +1,15 @@
+body {
+    background: #1f1f1f;
+    color: #FFF;
+    font-size: 40px;
+}
+
+input {
+    font-size: 60px;
+    width: 600px;
+}
+
+#resultado {
+    color: red;
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula Mais 1 code</title>
+    <link rel="stylesheet" href="aula.css">
+</head>
+
+<body>
+
+<div id="teste">
+    <form action="#">
+        <input id="nota1" type="number" value="" placeholder="Nota1" />
+        <input id="nota2" type="number" value="" placeholder="Nota2" />
+        <button id="botao" onclick="calcular()">CALCULAR</button>
+        <div id="resultado">A sua media eh <span>0</span></div>
+    </form>
+</div>
+
+
+
+<script>
+    function calcular() {
+        let nota1 = document.getElementById("nota1").valueAsNumber
+        let nota2 = document.getElementById("nota2").valueAsNumber
+        let media = (nota1 + nota2) / 2
+        console.log(media)
+
+        // JavaScript
+        let span = document.querySelector("#resultado span")
+        span.innerHTML = media + ''
+
+        let div = document.getElementById("resultado")
+        div.style.display = 'block'
+        if (media > 6) {
+            div.style.color = 'green'
+        }else {
+            div.style.color = 'red'
+        }
+    }
+
+</script>
+</body>
+</html>
